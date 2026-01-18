@@ -6,3 +6,11 @@ sky:
     database: sky_take_out
     username: root
     password: 13315687697zyb
+  alioss:
+    access-key-id: LTAI5t6yAMfKG4ESTR9H5ady
+    access-key-secret: VEvXaCFaKfOlTABjKC7RKhC7m1uLrf
+    endpoint: oss-cn-beijing.aliyuncs.com
+    bucket-name: javaforyuanbo
+  wechat:
+    appid: wx11bc2eae83416517
+    secret: 54e95b6509d58970ae15d18c6de1c5ae
