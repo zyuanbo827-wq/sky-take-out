@@ -20,6 +20,7 @@ public class RedisConfiguration {
         log.info("开始配置RedisTemplate...");
         //设置RedisTemplate的序列化器
         RedisTemplate redisTemplate = new RedisTemplate();
+
         redisTemplate.setKeySerializer(new StringRedisSerializer());
 
         redisTemplate.setConnectionFactory(redisConnectionFactory);
