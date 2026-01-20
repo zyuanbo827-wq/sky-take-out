@@ -71,10 +71,10 @@ public interface OrderMapper {
 
     /**
      * 查询状态为PENDING_PAYMENT的订单
-     * @param pendingPayment
+     * @param status
      * @param time
      * @return
      */
     @Select("select * from orders where status = #{status} and order_time < #{time}")
-    List<Orders> getByStatusAndOrderTimeLt(Integer pendingPayment, LocalDateTime time);
+    List<Orders> getByStatusAndOrderTimeLt(Integer status, LocalDateTime time);
 }
