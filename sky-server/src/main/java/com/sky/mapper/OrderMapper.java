@@ -77,4 +77,10 @@ public interface OrderMapper {
      */
     @Select("select * from orders where status = #{status} and order_time < #{time}")
     List<Orders> getByStatusAndOrderTimeLt(Integer status, LocalDateTime time);
+
+    /**
+     * 计算每日
+     */
+    @Select("select sum(amount) from orders where order_time between #{beginTime} and #{endTime} and status = #{status}")
+    Double sumByMap(LocalDateTime beginTime, LocalDateTime endTime, Integer status); // Method not defined in XML
 }
